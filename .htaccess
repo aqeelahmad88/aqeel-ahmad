@@ -1,0 +1,51 @@
+# Apache / LiteSpeed Rewrite Rules for aqeel-ahmad.info
+RewriteEngine On
+RewriteBase /
+
+# 301 Permanent Redirects from legacy portfolio-details-X.html to clean slugs
+RewriteRule ^portfolio-details\.html$ /metal-carports-usa [R=301,L]
+RewriteRule ^portfolio-details-1\.html$ /metal-carports-usa [R=301,L]
+RewriteRule ^portfolio-details-2\.html$ /idiasporan-platform [R=301,L]
+RewriteRule ^portfolio-details-3\.html$ /metal-carports-usa-crm [R=301,L]
+RewriteRule ^portfolio-details-4\.html$ /sms-solutions-australia [R=301,L]
+RewriteRule ^portfolio-details-5\.html$ /book-keeping-system [R=301,L]
+RewriteRule ^portfolio-details-6\.html$ /cascada-bathrooms [R=301,L]
+RewriteRule ^portfolio-details-7\.html$ /sumo-ranking [R=301,L]
+RewriteRule ^portfolio-details-8\.html$ /out-of-the-blue-seafood [R=301,L]
+RewriteRule ^portfolio-details-9\.html$ /razab-fashion [R=301,L]
+RewriteRule ^portfolio-details-10\.html$ /amsons-design [R=301,L]
+RewriteRule ^portfolio-details-11\.html$ /rapfit-clothing [R=301,L]
+RewriteRule ^portfolio-details-12\.html$ /text2view [R=301,L]
+RewriteRule ^portfolio-details-13\.html$ /route-deliveries [R=301,L]
+RewriteRule ^portfolio-details-14\.html$ /casting-talent [R=301,L]
+RewriteRule ^portfolio-details-15\.html$ /inky-illustration [R=301,L]
+RewriteRule ^portfolio-details-16\.html$ /tyre-point [R=301,L]
+RewriteRule ^portfolio-details-17\.html$ /churahi-enterprises [R=301,L]
+RewriteRule ^portfolio-details-18\.html$ /epcot-pakistan [R=301,L]
+RewriteRule ^portfolio-details-19\.html$ /services-of-canada [R=301,L]
+RewriteRule ^portfolio-details-20\.html$ /noor-brands [R=301,L]
+RewriteRule ^portfolio-details-21\.html$ /hash-phone [R=301,L]
+RewriteRule ^portfolio-details-22\.html$ /out-of-the-blue-seafood-crm [R=301,L]
+RewriteRule ^portfolio-details-23\.html$ /great-fame-clothing-co [R=301,L]
+RewriteRule ^portfolio-details-24\.html$ /st-engineering-services [R=301,L]
+RewriteRule ^portfolio-details-25\.html$ /deluxe-footwear [R=301,L]
+RewriteRule ^portfolio-details-26\.html$ /vj-designs [R=301,L]
+RewriteRule ^portfolio-details-27\.html$ /rolespot [R=301,L]
+RewriteRule ^portfolio-details-28\.html$ /home-auction-mls [R=301,L]
+RewriteRule ^portfolio-details-29\.html$ /realista-quality-real-estate [R=301,L]
+RewriteRule ^portfolio-details-30\.html$ /bexley-childcare [R=301,L]
+RewriteRule ^portfolio-details-31\.html$ /find-book-beauty [R=301,L]
+RewriteRule ^portfolio-details-32\.html$ /mygwork [R=301,L]
+RewriteRule ^portfolio-details-33\.html$ /health-unity-wealth [R=301,L]
+
+# Redirect direct requests for .html files to extensionless clean URLs (exclude index)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^.]+)\.html [NC]
+RewriteCond %1 !^index$ [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Clean URL rewriting - Serve .html files without extension in URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
