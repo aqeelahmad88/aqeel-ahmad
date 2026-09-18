@@ -1,0 +1,184 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  trailingSlash: false,
+  images: {
+    unoptimized: true,
+  },
+  async redirects() {
+    return [
+      {
+            "source": "/portfolio-details.html",
+            "destination": "/metal-carports-usa",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-1.html",
+            "destination": "/metal-carports-usa",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-2.html",
+            "destination": "/idiasporan-platform",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-3.html",
+            "destination": "/metal-carports-usa-crm",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-4.html",
+            "destination": "/sms-solutions-australia",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-5.html",
+            "destination": "/book-keeping-system",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-6.html",
+            "destination": "/cascada-bathrooms",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-7.html",
+            "destination": "/sumo-ranking",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-8.html",
+            "destination": "/out-of-the-blue-seafood",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-9.html",
+            "destination": "/razab-fashion",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-10.html",
+            "destination": "/amsons-design",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-11.html",
+            "destination": "/rapfit-clothing",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-12.html",
+            "destination": "/text2view",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-13.html",
+            "destination": "/route-deliveries",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-14.html",
+            "destination": "/casting-talent",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-15.html",
+            "destination": "/inky-illustration",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-16.html",
+            "destination": "/tyre-point",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-17.html",
+            "destination": "/churahi-enterprises",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-18.html",
+            "destination": "/epcot-pakistan",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-19.html",
+            "destination": "/services-of-canada",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-20.html",
+            "destination": "/noor-brands",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-21.html",
+            "destination": "/hash-phone",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-22.html",
+            "destination": "/out-of-the-blue-seafood-crm",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-23.html",
+            "destination": "/great-fame-clothing-co",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-24.html",
+            "destination": "/st-engineering-services",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-25.html",
+            "destination": "/deluxe-footwear",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-26.html",
+            "destination": "/vj-designs",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-27.html",
+            "destination": "/rolespot",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-28.html",
+            "destination": "/home-auction-mls",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-29.html",
+            "destination": "/realista-quality-real-estate",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-30.html",
+            "destination": "/bexley-childcare",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-31.html",
+            "destination": "/find-book-beauty",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-32.html",
+            "destination": "/mygwork",
+            "permanent": true
+      },
+      {
+            "source": "/portfolio-details-33.html",
+            "destination": "/health-unity-wealth",
+            "permanent": true
+      }
+];
+  },
+};
+
+export default nextConfig;
