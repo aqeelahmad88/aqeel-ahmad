@@ -107,20 +107,40 @@ h6 {
   width: 300px;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
-  transition: all 0.5s;
-  padding: 0 15px;
+  padding: 0 15px 30px 15px;
   background: #040b14;
   overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(37, 99, 235, 0.4) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+#header::-webkit-scrollbar {
+  width: 6px;
+}
+
+#header::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+#header::-webkit-scrollbar-thumb {
+  background: rgba(37, 99, 235, 0.4);
+  border-radius: 4px;
+}
+
+#header::-webkit-scrollbar-thumb:hover {
+  background: rgba(37, 99, 235, 0.7);
 }
 
 #header .profile img {
-  margin: 20px auto 12px;
+  margin: 15px auto 10px;
   display: block;
-  width: 124px;
-  height: 124px;
+  width: 108px;
+  height: 108px;
   object-fit: cover;
   border: 3px solid rgba(37, 99, 235, 0.4);
-  box-shadow: 0 0 25px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.25);
   transition: var(--transition);
 }
 
@@ -131,7 +151,7 @@ h6 {
 
 #header .profile h1,
 #header .profile .profile-name {
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   font-weight: 700;
@@ -150,29 +170,33 @@ h6 {
 
 #header .profile .profile-badge {
   display: inline-block;
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
   color: var(--accent-cyan);
   background: rgba(6, 182, 212, 0.12);
   padding: 3px 10px;
   border-radius: 20px;
-  margin-top: 6px;
+  margin-top: 4px;
+}
+
+#header .profile .social-links {
+  margin-top: 10px !important;
 }
 
 #header .profile .social-links a {
-  font-size: 18px;
+  font-size: 16px;
   display: inline-block;
   background: #1e293b;
   color: #cbd5e1;
   line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  padding: 7px 0;
+  margin-right: 3px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   transition: var(--transition);
 }
 
@@ -215,7 +239,7 @@ h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding: 30px 0 0 0;
+  padding: 15px 0 10px 0;
 }
 
 .nav-menu * {
@@ -234,16 +258,17 @@ h6 {
   display: flex;
   align-items: center;
   color: #a8a9b4;
-  padding: 12px 15px;
-  margin-bottom: 8px;
+  padding: 9px 12px;
+  margin-bottom: 3px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 14.5px;
+  border-radius: 8px;
 }
 
 .nav-menu a i,
 .nav-menu a:focus i {
-  font-size: 24px;
-  padding-right: 8px;
+  font-size: 20px;
+  padding-right: 10px;
   color: #6f7180;
 }
 
@@ -1710,32 +1735,43 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 15px;
-  color: #f4f6fd;
+  padding: 30px 20px;
+  color: #94a3b8;
   font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 9999;
-  background: #040b14;
+  background: #020617;
+  border-top: 1px solid #1e293b;
+  margin-left: 300px;
+  position: relative;
+  z-index: 10;
+  width: auto;
 }
 
 #footer .copyright {
   text-align: center;
+  color: #cbd5e1;
+  font-size: 14px;
 }
 
 #footer .credits {
-  padding-top: 5px;
+  padding-top: 6px;
   text-align: center;
   font-size: 13px;
-  color: #eaebf0;
+  color: #64748b;
+}
+
+#footer .credits a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+#footer .credits a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
 }
 
 @media (max-width: 1199px) {
   #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
+    margin-left: 0;
+    padding: 24px 15px;
   }
 }
